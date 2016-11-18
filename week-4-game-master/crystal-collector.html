@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--Marie Laborde-->
+<!--11/16/2016-->
+<!--HTML5-->
+
+<html lang="en">
+	<head>
+		<link href="/Users/mjoulel/UT/week-4-game-master/css/cc-style.css" rel="stylesheet" type="text/css" media="screen">
+	</head>
+	<section>
+		<img src="http://www.hidden4fun.com/files/image/l_the-crystal-collector.jpg" width="400" height="400">
+	</section>
+	<body>
+	  <div class="text-center">
+        <button class="btn btn-warning btn-xs themeButton"><span class="glyphicon glyphicon-music"></span> Play Theme!</button>       
+        <button class="btn btn-default btn-xs pauseButton"><span class="glyphicon glyphicon-pause"></span> Pause Song</button> 
+      </div>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			// Gets Link for Theme Song
+      		var audioElement = document.createElement("audio");
+     		audioElement.setAttribute("src", "/Users/mjoulel/UT/week-4-game-master/assets/The-Warriors-Luther-Come-Out-To-Play.mp3");
+   			// <audio controls>
+   			// 	<source src="/Users/mjoulel/UT/week-4-game-master/assets/The-Warriors-Luther-Come-Out-To-Play.mp3" type="audio mpeg">
+   			// </audio>
+
+   			// Theme Button
+      		$(".themeButton").on("click", function() {
+        		audioElement.play();
+      		});
+
+      		$(".pauseButton").on("click", function() {
+        		audioElement.pause();
+      		});
+   		});
+		</script>
+	</body>
+</html>		
