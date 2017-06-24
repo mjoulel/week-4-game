@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--Marie Laborde-->
+<!--6/24/2017-->
+<!--HTML5-->
+
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <title>Crystal Collector</title>
+
+        <!-- To adapt page to mobile devices screen -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--jQuery-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+        <!--My JS-->
+        <script type="text/javascript" src="javascript/game-revised.js"></script>
+
+        <!-- CSS -->
+		<link href="css/cc-style-revised.css" rel="stylesheet" type="text/css" media="screen">
+
+	</head>
+	<section>
+		<img src="http://www.hidden4fun.com/files/image/l_the-crystal-collector.jpg" width="400" height="400">
+	</section>
+	<body>
+        <div id="rules-area">
+
+            <h4>You will be shown a random number at the start of the game. When you click on a crystal, it will add a specific amount of points to your total score. If you win, the total score matches the random number from the beginning of the game. If you lose, your score goes above the random number.</h4>
+
+            <div id="screen">
+                <!-- Random Number Display -->
+                <div id="random-area"></div>
+                <!-- Wins/Losses Display -->
+                <div id="winArea"></div>
+            </div>
+
+            <div>
+                <!-- Crystals -->
+                <div id="crystal-area"></div>
+                <div id="score-title">Your total score is:</div>
+                <!-- Score Display -->
+                <div id="score-area"></div>
+            </div>
+
+            <!-- <div class="container">
+                <a href="index-revised.html" class="button"><img src="images/blue.png" /></a>
+                <a href="index-revised.html" class="button"><img src="images/green.png" /></a>
+                <a href="index-revised.html" class="button"><img src="images/red.png" /></a>
+                <a href="index-revised.html" class="button"><img src="images/yellow.png" /></a>
+            </div> -->
+            <!-- <div class = main>
+                <div class = content>
+                    <a href = "index-revised.html" class="button"><img src="images/blue.png" /></a>
+                    <a href = "index-revised.html" class="button"><img src="images/green.png" /></a>
+                    <a href = "index-revised.html" class="button"><img src="images/red.png" /></a>
+                    <a href = "index-revised.html" class="button"><img src="images/yellow.png" /></a>
+                </div>
+            </div> -->
+
+
+        </div>
+
+        <!-- Crystals -->
+        <section id="crystals" class="crystals">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">  
+                        <hr class="small">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="crystals-item">
+                                    <a href="index-revised.html">
+                                    <img class="img-crystals img-responsive" src="images/blue.png">
+                                    </a>   
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="crystals-item">
+                                    <a href="index-revised.html">
+                                        <img class="img-crystals img-responsive" src="images/green.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="crystals-item">
+                                    <a href="index-revised.html">
+                                        <img class="img-crystals img-responsive" src="images/red.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="crystals-item">
+                                    <a href="index-revised.html">
+                                        <img class="img-crystals img-responsive" src="images/yellow.png">
+                                    </a>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-10 -->
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <audio autoplay>
+            <source src="assets/The-Warriors-Luther-Come-Out-To-Play.mp3" type="audio/mpeg">
+        </audio>
+
+	</body>
+</html>		
